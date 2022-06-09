@@ -1,5 +1,5 @@
 import header from "./src/components/header.js"
-import searchBar from "./src/components/searchBar/searchBar.js"
+import searchBar from "./src/components/searchBar.js"
 import body from "./src/components/body/body.js";
 const app = ()=>{
     const $div = document.createElement("div");

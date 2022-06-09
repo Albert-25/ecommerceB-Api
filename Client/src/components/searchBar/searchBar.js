@@ -1,6 +1,6 @@
-import { getProductByName, getAllProducts } from "../apiAxios/requests.js";
-import productCard from "../components/productCard.js";
-import { $root } from "../../index.js";
+import { getProductByName, getAllProducts } from "../../apiAxios/requests.js";
+import productCard from "../productCard.js"; 
+import { $root } from "../../../index.js";
 
 const searchBar = () => {
     const $div = document.createElement("div");

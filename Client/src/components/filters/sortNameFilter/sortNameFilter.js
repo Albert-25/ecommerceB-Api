@@ -15,7 +15,7 @@ const sortNameFilter = () => {
     const handleFilterName = () => {
         alert("HOLAAAAAAAAAAAAAAAAA")
     }
-
+ 
     $selectOrderName.addEventListener("change", ()=> handleFilterName());
     $orderNameDiv.appendChild($selectOrderName);
     $divContainer.appendChild($orderNameDiv);

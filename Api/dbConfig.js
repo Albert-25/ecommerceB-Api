@@ -1,15 +1,14 @@
-const port = 3000;
 var mysql = require("mysql");
+const { DB_HOST, DB_DATABASE, DB_USER, DB_PASSWORD } = process.env
 
 var db_config = {
-    host: "mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com",
-    database: "bsale_test",
-    user: "bsale_test",
-    password: "bsale_test",
+    host: DB_HOST,
+    database: DB_DATABASE,
+    user: DB_USER,
+    password: DB_PASSWORD,
 }
 const pool = mysql.createPool(db_config);
 
 module.exports = {
-    port,
     pool,
 }

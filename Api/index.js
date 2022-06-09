@@ -1,5 +1,9 @@
-const { port } = require("./dbConfig");
+if (process.env.NODE_ENV != 'production') {
+    require('dotenv').config();
+}
+
+const { PORT } = process.env;
 const app = require("./app");
-app.listen(port, () => {
-    console.log(`Servidor en el puerto ${port}`);
+app.listen(PORT, () => {
+    console.log(`Servidor en el puerto ${PORT}`);
 });

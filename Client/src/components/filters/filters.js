@@ -1,13 +1,17 @@
 const filters = () => {
-    var d = "miclase"
+    
     const $divContainer = document.createElement("div");
     $divContainer.classList.add("container-filter");
     const $orderNameDiv = document.createElement('div');
     $orderNameDiv.classList.add("order-name");
 
+    const handleFilterName = ()=>{
+        console.log("handleFilterName")
+    }
+
     $orderNameDiv.innerHTML = `
-    <div>Order rating</div>
-    <select onChange={handleFilterRating}>
+    <div>Order Name</div>
+    <select onChange=${handleFilterName()}>
         <option selected disabled={true}>Select rating</option>
         <option value="asc">Ascendente</option>
         <option value="des">Descendente</option>

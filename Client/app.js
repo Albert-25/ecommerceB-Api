@@ -1,7 +1,7 @@
 import header from "./src/components/header.js"
 import searchBar from "./src/components/searchBar/searchBar.js"
 import body from "./src/components/body/body.js";
-import filters from "./src/components/filters.js";
+import filters from "./src/components/filters/filters.js";
 
 const app = ()=>{
     const $div = document.createElement("div");

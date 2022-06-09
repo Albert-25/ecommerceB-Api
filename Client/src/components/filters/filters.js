@@ -1,12 +1,12 @@
 const filters = () => {
+    var d = "miclase"
     const $divContainer = document.createElement("div");
     $divContainer.classList.add("container-filter");
-    var d = "miclase"
-    const $orderNameDiv = document.createElement('orderNameDiv');
+    const $orderNameDiv = document.createElement('div');
     $orderNameDiv.classList.add("order-name");
-    $divContainer.appendChild($orderNameDiv);
-
+    
     $orderNameDiv.innerHTML = `<button class =${d}>ORDER NAME</button>`
+    $divContainer.appendChild($orderNameDiv);
 }
 export default filters;
 // git add .

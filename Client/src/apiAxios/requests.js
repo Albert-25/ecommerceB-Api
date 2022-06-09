@@ -1,5 +1,5 @@
 import axios from "axios";
-// const { PORT } = process.env;
+
 const urlBase = "https://ecommerce-smith.herokuapp.com";
 export async function getAllProducts() {
     try {
@@ -18,6 +18,6 @@ export async function getProductByName(productName){
         let data = json.data;
         return data;
     } catch (e) {
-        console.log("hay un error en requests.js getAllProducts", e)
+        console.log("hay un error en requests.js getProductByName", e)
     }
 }

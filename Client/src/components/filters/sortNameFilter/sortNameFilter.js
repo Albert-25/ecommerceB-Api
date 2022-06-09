@@ -10,6 +10,7 @@ const sortNameFilter = () => {
     <option selected disabled={true}>Select rating</option>
     <option value="asc">Ascendente</option>
     <option value="des">Descendente</option>
+    <option value="nose>aaaaaaaaa</option>"
     `
     const handleFilterName = () => {
         alert("HOLAAAAAAAAAAAAAAAAA")

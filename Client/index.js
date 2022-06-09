@@ -6,4 +6,4 @@ export const $root = document.getElementById("root");
 $root.appendChild(app());
 $root.appendChild(bodyStyle);
 
-alert("TODO BIEN!")
+alert("TODO BACANO")

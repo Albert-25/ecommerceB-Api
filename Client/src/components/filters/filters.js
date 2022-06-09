@@ -14,7 +14,7 @@ const filters = () => {
     <option value="asc">Ascendente</option>
     <option value="des">Descendente</option>
     `
-
+    $selectOrderName.addEventListener("change", ()=> alert("selectOrderName"));
     $orderNameDiv.appendChild($selectOrderName);
     $divContainer.appendChild($orderNameDiv);
     return $divContainer;

@@ -7,6 +7,7 @@ const filters = () => {
     
     $orderNameDiv.innerHTML = `<button class =${d}>ORDER NAME</button>`
     $divContainer.appendChild($orderNameDiv);
+    return $divContainer;
 }
 export default filters;
 // git add .

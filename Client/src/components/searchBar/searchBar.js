@@ -17,7 +17,7 @@ const searchBar = () => {
     let nameSearch;
     let productsByName;
 
-    document.addEventListener("change", () => nameSearch = $input.value);
+    $input.addEventListener("change", () => nameSearch = $input.value);
     $buttonSend.addEventListener("click", () => {
         productsByName = getProductByName(nameSearch).then(products => products.map((product) => {
             let $productDiv = document.createElement("div");

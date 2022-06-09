@@ -6,7 +6,7 @@ const filters = () => {
     $orderNameDiv.classList.add("order-name");
 
     const handleFilterName = ()=>{
-        Alert("handleFilterName")
+       alert("handleFilterName")
     }
 
     $orderNameDiv.innerHTML = `

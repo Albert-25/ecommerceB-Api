@@ -1,0 +1,116 @@
+const express = require("express");
+const parseJson = express.json();
+const app = express();
+const port = 3000;
+var mysql = require("mysql");
+const { readPool } = require("./operationsPool"); // query!
+
+var db_config = {
+    host: "mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com",
+    database: "bsale_test",
+    user: "bsale_test",
+    password: "bsale_test",
+}
+const pool = mysql.createPool(db_config);
+
+app.use(parseJson);
+// app.get("/", (req, res) => {
+//     readPool(pool, (result) => {
+//         res.json(result);
+//     })
+// });
+
+// app.listen(port, () => {
+//     console.log(`Servidor en el puerto ${port}`);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const connection = mysql.createConnection(db_config);
+// connection.connect(function (error) {
+//     if (error) {
+//         console.log("hay un error en db2.js");
+//         throw error;
+//     }
+//     else {
+//         console.log("Conexión exitosa!");
+//     }
+// });
+
+// function handleDisconnect() {
+
+
+//     connection.connect(function (err) {
+//         if (err) {
+//             console.log("hay un error cuando se intenta conectar", err);
+//             setTimeout(handleDisconnect, 2000);
+//         }
+//         else {
+//             console.log("Conexión exitosa!");
+//         }
+//     });
+
+//     connection.on("error", function(err){
+//         console.log("db error", err);
+//         if(err.code === 'PROTOCOL_CONNECTION_LOST'){
+//             console.log("ACA PROTOCOL_CONNECTION_LOST =============")
+//             handleDisconnect();
+//         }
+//         else{
+//             console.log("ACA HAY OTRO ERROR!");
+//             throw err;
+//         }
+//     });
+// }
+
+// handleDisconnect();

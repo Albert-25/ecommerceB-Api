@@ -1,0 +1,40 @@
+    constructor() {
+        super();
+        this.name = null;
+        this.lastname = null;
+    }
+
+    static get observedAttributes() {
+        return ["name", "lastname"];
+    }
+
+    attributeChangeCallback(nameAtr, oldValue, newValue) {
+        console.log("acaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+        switch (nameAtr) {
+            case "name":
+                
+                this.name = newValue;
+                console.log("qaaaaaa", this.name)
+                break;
+            case "lastname":
+                this.lastname = newValue;
+                break;
+        }
+    }
+
+*/*/*//////////////////////////////////////////////////////
+
+    const header = ()=>{
+    const $div = document.createElement("div");
+    const $p = document.createElement("p");
+    $p.textContent = "soy text CONTENT P";
+    $div.appendChild($p);
+    const $h1 = document.createElement("h1");
+    const nodeH1 = document.createTextNode("soy el NODE DE H1");
+    $h1.appendChild(nodeH1);
+    $div.appendChild($h1);
+
+    // $div.innerHTML = "<div>Hola HEADER<h1>soy h1</h1><p>soy p </p></div>"
+    return $div;
+}
+export default header;

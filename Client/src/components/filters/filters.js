@@ -11,7 +11,7 @@ const filters = () => {
 
     $orderNameDiv.innerHTML = `
     <div>Order Name</div>
-    <select onChange=${handleFilterName}>
+    <select onChange=${handleFilterName()}>
         <option selected disabled={true}>Select rating</option>
         <option value="asc">Ascendente</option>
         <option value="des">Descendente</option>

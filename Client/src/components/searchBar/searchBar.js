@@ -1,4 +1,4 @@
-import { getProductByName, getAllProducts } from "../../apiAxios/requests.js";
+import { getProductByName } from "../../apiAxios/requests.js";
 import productCard from "../productCard.js"; 
 import { $root } from "../../../index.js";
 

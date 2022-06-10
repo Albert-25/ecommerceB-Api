@@ -1,6 +1,5 @@
 const { readProducts, readProductsByCategory } = require("../queries/products");
 const { pool } = require("../../dbConfig");
-const axios = require("axios");
 
 const getProducts = (req, res) => {
     const { name } = req.query;
@@ -152,32 +151,3 @@ module.exports = {
     getProductsByPriceSort,
     getProductsByNameCategory,
 }
-
-
-
-
-
-
-
-// const getProductsByName = (req, res) => {
-//     const { name } = req.query;
-//     readProducts(pool, (result) => {
-//         let resultByName = result.filter(product => product.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(product.name.toLowerCase()));
-//         res.json(resultByName);
-//     })
-// }
-
-
-
-
-
-
-// function insert(connection, callback){
-//     let insertQuery = "INSERT INTO lenguajes (name) VALUES ('Javascript')";
-//     connection.query(insertQuery, function (err, result) {
-//         if(err) {console.log( "ERROR EN OPERATIONS!!!")
-//         throw err};
-//         callback(result);
-//         connection.end();
-//     })
-// }

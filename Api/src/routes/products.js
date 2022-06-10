@@ -5,7 +5,6 @@ const { getProducts,
     getProductsByNameSort,
     getProductsByPriceSort,
     getProductsByNameCategory,
-    // getProductsByName
 } = require("../controllers/products");
 
 router.get("/", getProducts);

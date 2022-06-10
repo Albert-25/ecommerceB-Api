@@ -22,29 +22,6 @@ const getProducts = (req, res) => {
 }
 const getProductsByDiscount = (req, res) => {
     const { value, sort } = req.query;
-    // if(value){
-    //     if(value == "true"){
-    //         if(sort){
-    //             switch(){
-    //                 case "asc"
-    //                 case "des"
-    //                 default : // sort query is incorrect
-    //             }
-    //         }
-    //         else{
-    //             // for value query as true sort query is missing
-    //         }
-    //     }
-    //     else{
-    //         if(value == "false"){
-
-    //         }
-    //         // value query is incorrect
-    //     }
-    // }
-    // else{
-    //     // value is missing
-    // }
     if (value == "true") {
         switch (sort) {
             case "asc":

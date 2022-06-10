@@ -145,7 +145,7 @@ const getProductsByNameCategory = (req, res) => {
     }
 }
 const getPagination = async (req, res)=>{
-    const json = await axios.get("https://ecommerce-smith.herokuapp.com/categories");
+    const json = await axios.get("http://localhost:3000/categories");
     const data = json.data
     res.json(data);
 }

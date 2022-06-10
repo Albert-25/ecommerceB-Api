@@ -1,4 +1,4 @@
-### EndpOints :
+### Endpoints :
 
 1. GET/products
 2. GET/categories

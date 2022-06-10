@@ -144,18 +144,13 @@ const getProductsByNameCategory = (req, res) => {
         res.status(404).send("missing name query");
     }
 }
-const getPagination = async (req, res)=>{
-    const json = await axios.get("http://localhost:3000/categories");
-    const data = json.data
-    res.json(data);
-}
+
 module.exports = {
     getProducts,
     getProductsByDiscount,
     getProductsByNameSort,
     getProductsByPriceSort,
     getProductsByNameCategory,
-    getPagination
 }
 
 

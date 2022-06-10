@@ -35,17 +35,4 @@ function readProductsByCategory(pool, { name }, callback) {
 module.exports = {
     readProducts,
     readProductsByCategory,
-    // readProductsByName
 };
-
-// function readProductsByName(pool, callback) {
-//     pool.getConnection(function (err, connection) {
-//         if (err) throw err;
-//         connection.query(`SELECT * FROM product WHERE name ="RON HAVAna ESPECIALeee"`, function (err, result) {
-//             if (err) throw err;
-//             callback(result);
-
-//             connection.release();
-//         });
-//     })
-// }

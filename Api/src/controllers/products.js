@@ -130,7 +130,6 @@ const getProductsByNameCategory = (req, res) => {
     const { name } = req.query;
     if (name) {
         readProductsByCategory(pool, { name }, (result) => {
-            // let resultByCategory = result.filter(product => product.category.toLowerCase() == name.toLowerCase());
             if (result.length == 0) {
                 res.status(404).send("incorrect name query ");
             }

@@ -1,5 +1,6 @@
 const { readProducts, readProductsByCategory } = require("../queries/products");
 const { pool } = require("../../dbConfig");
+const axios = require("axios");
 
 const getProducts = (req, res) => {
     const { name } = req.query;
@@ -143,13 +144,18 @@ const getProductsByNameCategory = (req, res) => {
         res.status(404).send("missing name query");
     }
 }
+const getPagination = async (req, res)=>{
+    const json = await axios.get("https://ecommerce-smith.herokuapp.com/categories");
+    const data = json.data
+    res.json(data);
+}
 module.exports = {
     getProducts,
     getProductsByDiscount,
     getProductsByNameSort,
     getProductsByPriceSort,
-    getProductsByNameCategory
-    // getProductsByName
+    getProductsByNameCategory,
+    getPagination
 }
 
 

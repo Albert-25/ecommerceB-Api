@@ -1,6 +1,6 @@
 ### Endpoints :
 
-1. GET/products
+1. GET/products </br>
 -respuesta: todos los productos.
 2. GET/categories
 -respuesta: todas las categorias.

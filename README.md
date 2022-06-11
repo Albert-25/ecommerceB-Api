@@ -15,7 +15,7 @@ Esta api fue desarrollada en Node Js con el framework Express
 6. GET/products/price?sort=(asc, des) </br>
 -respuesta: devuelve los productos ordenamos por precio con sort igual a asc(menor a mayor) o des (mayor a menor).
 7. GET/products/category?name=(categoryName) </br>
-8. -respuesta: devuelve aquellos productos perteneciente a una categoria en particular (categoryName).
+-respuesta: devuelve aquellos productos perteneciente a una categoria en particular (categoryName).
 
 
 ### Pasos para levantar el servidor en el puerto 3000:

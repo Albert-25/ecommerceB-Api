@@ -1,3 +1,5 @@
+Esta api fue desarrollada en Node Js con el framework Express
+
 ### Endpoints :
 
 1. GET/products </br>

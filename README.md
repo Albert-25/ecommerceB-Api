@@ -1,7 +1,7 @@
 ### Endpoints :
 
 1. GET/products
--respuesta: todos los productos.
+2. respuesta: todos los productos.
 2. GET/categories
 -respuesta: todas las categorias.
 3. GET/products?name=(productName)

@@ -2,10 +2,10 @@ const { readCategories } = require("../queries/categories");
 const { pool } = require("../../dbConfig");
 
 const getCategories = (req, res) => {
-    const {name} = req.query;
-    if(name){   
+    const {id} = req.query;
+    if(id){   
         readCategories(pool, (result) => {
-            let resultByName = result.filter(product => product.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(product.name.toLowerCase()));
+            let resultByName = result.filter(product => product.id == id);
             res.json(resultByName);
         })
     }

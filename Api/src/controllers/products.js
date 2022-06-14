@@ -127,11 +127,11 @@ const getProductsByPriceSort = (req, res) => {
     }
 }
 const getProductsByNameCategory = (req, res) => {
-    const { name } = req.query;
-    if (name) {
-        readProductsByCategory(pool, { name }, (result) => {
+    const { id } = req.query;
+    if (id) {
+        readProductsByCategory(pool, { id }, (result) => {
             if (result.length == 0) {
-                res.status(404).send("incorrect name query ");
+                res.status(404).send("incorrect id query ");
             }
             else {
                 res.json(result);
@@ -139,7 +139,7 @@ const getProductsByNameCategory = (req, res) => {
         });
     }
     else {
-        res.status(404).send("missing name query");
+        res.status(404).send("missing id query");
     }
 }
 

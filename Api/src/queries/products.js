@@ -12,9 +12,9 @@ function readProducts(pool, callback) {
     })
 }
 
-function readProductsByCategory(pool, { name }, callback) {
-    let insertQuery = "SELECT product.id AS id, product.name AS name, product.url_image AS url_image, product.price AS price, product.discount AS discount, category.name AS category FROM product JOIN category ON product.category = category.id WHERE category.name = ?";
-    let query = mysql.format(insertQuery, [name]);
+function readProductsByCategory(pool, { id }, callback) {
+    let insertQuery = "SELECT product.id AS id, product.name AS name, product.url_image AS url_image, product.price AS price, product.discount AS discount, category.name AS category FROM product JOIN category ON product.category = category.id WHERE category.id = ?";
+    let query = mysql.format(insertQuery, [id]);
     pool.getConnection(function (err, connection) {
         if (err) throw err;
         connection.query(query, function (err, result) {

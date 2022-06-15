@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const parseJson = express.json();
 
 const routes = require("./src/routes/index");
-const cors = require("cors");
+const cors = require("cors"); // utilizamos cors para permitir las peticiones a nuestra api
 
 const app = express();
 

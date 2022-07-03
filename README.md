@@ -1,4 +1,5 @@
 Esta api fue desarrollada en Node Js con el framework Express
+app depolaya: https://ecommerce-smith.herokuapp.com/products
 
 ### Endpoints :
 
